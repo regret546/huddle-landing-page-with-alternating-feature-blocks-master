@@ -86,4 +86,32 @@ h6 {
   --clr--very-pale-cyan: hsl(193, 100%, 96%);
   --clr--very-dark-cyan: hsl(192, 100%, 9%);
   --clr--grayish-blue: hsl(208, 11%, 55%);
+}
+
+body {
+  font-family: var(--ff--primary);
+  font-size: var(--fs--regular);
+}
+
+.container {
+  min-height: 100vh;
+  margin: 2rem;
+}
+
+.huddle__main_header_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.huddle__main_header_nav img {
+  width: 110px;
+  height: 20px;
+}
+.huddle__main_header_nav button {
+  font-weight: var(--fw--primary-very-bold);
+  border: none;
+  background-color: var(--clr--very-pale-cyan);
+  padding: 0.3rem;
+  padding-inline: 1.2rem;
+  border-radius: 1rem;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,21 @@
+.huddle__main {
+  &_header {
+    &_nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      img {
+        width: 110px;
+        height: 20px;
+      }
+      button {
+        font-weight: var(--fw--primary-very-bold);
+        border: none;
+        background-color: var(--clr--very-pale-cyan);
+        padding: 0.3rem;
+        padding-inline: 1.2rem;
+        border-radius: 1rem;
+      }
+    }
+  }
+}

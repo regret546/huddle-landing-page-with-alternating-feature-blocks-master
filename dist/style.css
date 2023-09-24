@@ -98,6 +98,10 @@ body {
   min-height: 100vh;
 }
 
+.huddle__main h1,
+.huddle__main h2 {
+  font-family: var(--ff--heading);
+}
 .huddle__main_header {
   display: grid;
   gap: 1.5rem;
@@ -111,6 +115,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 2rem;
 }
 .huddle__main_header_nav img {
   width: 110px;
@@ -131,6 +136,7 @@ body {
 .huddle__main_header_body_info {
   display: grid;
   gap: 1.5rem;
+  margin-bottom: 1rem;
 }
 .huddle__main_header_body_info .btn-getstarted {
   background-color: var(--clr--pink);
@@ -140,4 +146,24 @@ body {
   border-radius: 2rem;
   margin-inline: 1.5rem;
   font-weight: var(--fw--primary-very-bold);
+}
+.huddle__main_body {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+.huddle__main_body article > div {
+  display: grid;
+  gap: 1rem;
+}
+.huddle__main_body article > div img {
+  margin: 5rem 0;
+}
+.huddle__main_body article > div h2 {
+  font-size: 1.5rem;
+}
+.huddle__main_body article > div p {
+  color: var(--clr--grayish-blue);
 }/*# sourceMappingURL=style.css.map */

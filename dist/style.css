@@ -102,6 +102,15 @@ body {
 .huddle__main h2 {
   font-family: var(--ff--heading);
 }
+.huddle__main .btn-getstarted {
+  background-color: var(--clr--pink);
+  color: var(--clr--white);
+  padding: 0.8rem;
+  border: none;
+  border-radius: 2rem;
+  margin-inline: 1.5rem;
+  font-weight: var(--fw--primary-very-bold);
+}
 .huddle__main_header {
   display: grid;
   gap: 1.5rem;
@@ -138,23 +147,15 @@ body {
   gap: 1.5rem;
   margin-bottom: 1rem;
 }
-.huddle__main_header_body_info .btn-getstarted {
-  background-color: var(--clr--pink);
-  color: var(--clr--white);
-  padding: 0.8rem;
-  border: none;
-  border-radius: 2rem;
-  margin-inline: 1.5rem;
-  font-weight: var(--fw--primary-very-bold);
-}
 .huddle__main_body {
   display: grid;
   grid-template-columns: auto;
   gap: 2rem;
-  padding: 2rem;
+  padding: 2rem 1rem;
   text-align: center;
 }
 .huddle__main_body article > div {
+  padding-inline: 2rem;
   display: grid;
   gap: 1rem;
 }
@@ -166,4 +167,16 @@ body {
 }
 .huddle__main_body article > div p {
   color: var(--clr--grayish-blue);
+}
+.huddle__main_form {
+  margin-top: 3rem;
+  background-color: var(--clr--white);
+  padding: 3rem 0.7rem;
+  margin-bottom: -25%;
+  border-radius: 1.5rem;
+}
+.huddle__main_footer {
+  padding: 3rem 1rem;
+  padding-top: 10rem;
+  background-color: var(--clr--very-dark-cyan);
 }/*# sourceMappingURL=style.css.map */

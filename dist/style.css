@@ -169,14 +169,29 @@ body {
   color: var(--clr--grayish-blue);
 }
 .huddle__main_form {
+  position: relative;
   margin-top: 3rem;
   background-color: var(--clr--white);
   padding: 3rem 0.7rem;
-  margin-bottom: -25%;
+  margin-bottom: -110px;
   border-radius: 1.5rem;
 }
+.huddle__main_form h2 {
+  font-size: 1.5rem;
+}
+.huddle__main_form .btn-getstarted {
+  padding: 1rem 2.5rem;
+  font-size: 0.9rem;
+}
 .huddle__main_footer {
+  display: grid;
+  gap: 1rem;
   padding: 3rem 1rem;
   padding-top: 10rem;
   background-color: var(--clr--very-dark-cyan);
+  color: var(--clr--white);
+}
+.huddle__main_footer_contacts {
+  display: grid;
+  gap: 1rem;
 }/*# sourceMappingURL=style.css.map */

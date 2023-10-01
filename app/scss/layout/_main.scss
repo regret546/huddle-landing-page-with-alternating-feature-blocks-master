@@ -1,4 +1,6 @@
 .huddle__main {
+  display: grid;
+
   h1,
   h2 {
     font-family: var(--ff--heading);
@@ -13,8 +15,21 @@
     margin-inline: 1.5rem;
     font-weight: var(--fw--primary-very-bold);
   }
-  &_header {
+
+  &_header,
+  &_body,
+  &_footer {
     display: grid;
+    justify-content: center;
+  }
+
+  &_header > *,
+  &_body > *,
+  &_footer > * {
+    max-width: 600px;
+  }
+
+  &_header {
     gap: 1.5rem;
     background: var(--clr--very-pale-cyan) url("/images/bg-hero-mobile.svg")
       no-repeat;
@@ -53,8 +68,6 @@
     }
   }
   &_body {
-    display: grid;
-    grid-template-columns: auto;
     gap: 2rem;
     padding: 2rem 1rem;
     text-align: center;
@@ -92,7 +105,6 @@
   }
 
   &_footer {
-    display: grid;
     gap: 1rem;
     padding: 3rem 1rem;
     padding-top: 10rem;
@@ -101,7 +113,55 @@
 
     &_contacts {
       display: grid;
-      gap: 1rem;
+      gap: 2rem;
+      .flex-group-1,
+      .flex-group-2,
+      .flex-group-3 {
+        display: flex;
+        img {
+          flex-shrink: 0;
+          width: 28px;
+          height: 30px;
+          margin-right: 2rem;
+          align-self: flex-start;
+        }
+      }
+      .flex-group-1 {
+        img {
+          margin-top: 8px;
+          width: 25px;
+        }
+      }
     }
+    ul {
+      display: grid;
+      gap: 1rem;
+      margin-top: 3rem;
+    }
+
+    .social-media {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        color: var(--clr--white);
+        height: 38px;
+        width: 38px;
+        border-radius: 38px;
+        border: 1px solid var(--clr--white);
+      }
+    }
+    .copy-right {
+      text-align: center;
+      font-size: 0.8rem;
+    }
+  }
+  footer {
+    background-color: var(--clr--very-dark-cyan);
   }
 }

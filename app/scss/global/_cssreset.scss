@@ -41,6 +41,10 @@ textarea,
 select {
   font: inherit;
 }
+ul {
+  list-style-type: none;
+  padding: 0;
+}
 /*
     7. Avoid text overflows
   */

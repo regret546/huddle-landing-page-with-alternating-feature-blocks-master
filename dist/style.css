@@ -302,4 +302,30 @@ body {
   .huddle__main_header_body_img {
     flex: 0 1 650px;
   }
+  .huddle__main_body h2 {
+    font-size: 2rem !important;
+  }
+  .huddle__main_body_grow_content, .huddle__main_body_flow_content, .huddle__main_body_users_content {
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 6rem !important;
+         column-gap: 6rem !important;
+    align-items: center;
+    text-align: left;
+  }
+  .huddle__main_body_grow_content > div, .huddle__main_body_flow_content > div, .huddle__main_body_users_content > div {
+    display: grid;
+    gap: 1.5rem;
+  }
+  .huddle__main_body_grow_content div:nth-of-type(1), .huddle__main_body_flow_content div:nth-of-type(1), .huddle__main_body_users_content div:nth-of-type(1) {
+    order: 1;
+  }
+  .huddle__main_body_grow_content div:nth-of-type(2), .huddle__main_body_flow_content div:nth-of-type(2), .huddle__main_body_users_content div:nth-of-type(2) {
+    order: 2;
+  }
+  .huddle__main_body_grow_content div:nth-of-type(1), .huddle__main_body_users_content div:nth-of-type(1) {
+    order: 2;
+  }
+  .huddle__main_body_grow_content div:nth-of-type(2), .huddle__main_body_users_content div:nth-of-type(2) {
+    order: 1;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -180,7 +180,7 @@ body {
 .huddle__main_body article > div p {
   color: var(--clr--grayish-blue);
 }
-.huddle__main_form {
+.huddle__main_body_form {
   position: relative;
   margin-top: 3rem;
   background-color: var(--clr--white);
@@ -188,10 +188,11 @@ body {
   margin-bottom: -110px;
   border-radius: 1.5rem;
 }
-.huddle__main_form h2 {
-  font-size: 1.5rem;
+.huddle__main_body_form h2 {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
 }
-.huddle__main_form .btn-getstarted {
+.huddle__main_body_form .btn-getstarted {
   padding: 1rem 2.5rem;
   font-size: 0.9rem;
 }
@@ -257,7 +258,7 @@ body {
   background-color: var(--clr--very-dark-cyan);
 }
 @media only screen and (min-width: 992px) {
-  .huddle__main_header > *, .huddle__main_body > *, .huddle__main_footer > * {
+  .huddle__main_header > *, .huddle__main_body > *, .huddle__main_footer > *, .huddle__main_form > * {
     max-width: 1200px;
   }
   .huddle__main_header {
@@ -327,5 +328,10 @@ body {
   }
   .huddle__main_body_grow_content div:nth-of-type(2), .huddle__main_body_users_content div:nth-of-type(2) {
     order: 1;
+  }
+  .huddle__main_body_form {
+    width: 100%;
+    justify-self: center;
+    max-width: 900px;
   }
 }/*# sourceMappingURL=style.css.map */

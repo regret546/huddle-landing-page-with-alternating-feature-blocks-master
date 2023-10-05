@@ -86,21 +86,22 @@
         color: var(--clr--grayish-blue);
       }
     }
-  }
-  &_form {
-    position: relative;
-    margin-top: 3rem;
-    background-color: var(--clr--white);
-    padding: 3rem 0.7rem;
-    margin-bottom: -110px;
-    border-radius: 1.5rem;
+    &_form {
+      position: relative;
+      margin-top: 3rem;
+      background-color: var(--clr--white);
+      padding: 3rem 0.7rem;
+      margin-bottom: -110px;
+      border-radius: 1.5rem;
 
-    h2 {
-      font-size: 1.5rem;
-    }
-    .btn-getstarted {
-      padding: 1rem 2.5rem;
-      font-size: 0.9rem;
+      h2 {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+      }
+      .btn-getstarted {
+        padding: 1rem 2.5rem;
+        font-size: 0.9rem;
+      }
     }
   }
 
@@ -171,7 +172,8 @@
   @media only screen and (min-width: 992px) {
     &_header > *,
     &_body > *,
-    &_footer > * {
+    &_footer > *,
+    &_form > * {
       max-width: 1200px;
     }
 
@@ -257,6 +259,14 @@
           }
         }
       }
+      &_form {
+        width: 100%;
+        justify-self: center;
+        max-width: 900px;
+      }
+    }
+
+    &_footer {
     }
   }
 }

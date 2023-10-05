@@ -106,57 +106,59 @@
   }
 
   &_footer {
-    gap: 1rem;
-    padding: 3rem 1rem;
-    padding-top: 10rem;
     background-color: var(--clr--very-dark-cyan);
     color: var(--clr--white);
-
-    &_contacts {
-      display: grid;
-      gap: 2rem;
-      .flex-group-1,
-      .flex-group-2,
-      .flex-group-3 {
-        display: flex;
-        img {
-          flex-shrink: 0;
-          width: 28px;
-          height: 30px;
-          margin-right: 2rem;
-          align-self: flex-start;
-        }
-      }
-      .flex-group-1 {
-        img {
-          margin-top: 8px;
-          width: 25px;
-        }
-      }
-    }
-    ul {
+    &_info {
       display: grid;
       gap: 1rem;
-      margin-top: 3rem;
-    }
-
-    .social-media {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 2rem;
-      a {
-        text-decoration: none;
-        i {
+      padding: 3rem 1rem;
+      padding-top: 10rem;
+      &_contacts {
+        display: grid;
+        gap: 2rem;
+        .flex-group-1,
+        .flex-group-2,
+        .flex-group-3 {
           display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 25px;
-          color: var(--clr--white);
-          height: 38px;
-          width: 38px;
-          border-radius: 38px;
-          border: 1px solid var(--clr--white);
+          img {
+            flex-shrink: 0;
+            width: 28px;
+            height: 30px;
+            margin-right: 2rem;
+            align-self: flex-start;
+          }
+        }
+        .flex-group-1 {
+          img {
+            margin-top: 8px;
+            width: 25px;
+          }
+        }
+      }
+      ul {
+        display: grid;
+        gap: 1rem;
+        margin-top: 3rem;
+      }
+
+      .social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        a {
+          text-decoration: none;
+          i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            color: var(--clr--white);
+            height: 38px;
+            width: 38px;
+            border-radius: 38px;
+            border: 1px solid var(--clr--white);
+          }
         }
       }
     }
@@ -267,6 +269,29 @@
     }
 
     &_footer {
+      &_info {
+        display: flex;
+        gap: 5rem;
+        max-width: 1200px;
+        > * {
+          flex: 1;
+        }
+        ul {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          align-content: flex-start;
+          margin-top: 4rem;
+          row-gap: 1rem;
+        }
+        .social-media {
+          align-items: flex-start;
+          margin-top: 4rem;
+        }
+      }
+      .copy-right {
+        display: grid;
+        justify-content: flex-end;
+      }
     }
   }
 }

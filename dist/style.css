@@ -197,49 +197,52 @@ body {
   font-size: 0.9rem;
 }
 .huddle__main_footer {
-  gap: 1rem;
-  padding: 3rem 1rem;
-  padding-top: 10rem;
   background-color: var(--clr--very-dark-cyan);
   color: var(--clr--white);
 }
-.huddle__main_footer_contacts {
+.huddle__main_footer_info {
+  display: grid;
+  gap: 1rem;
+  padding: 3rem 1rem;
+  padding-top: 10rem;
+}
+.huddle__main_footer_info_contacts {
   display: grid;
   gap: 2rem;
 }
-.huddle__main_footer_contacts .flex-group-1,
-.huddle__main_footer_contacts .flex-group-2,
-.huddle__main_footer_contacts .flex-group-3 {
+.huddle__main_footer_info_contacts .flex-group-1,
+.huddle__main_footer_info_contacts .flex-group-2,
+.huddle__main_footer_info_contacts .flex-group-3 {
   display: flex;
 }
-.huddle__main_footer_contacts .flex-group-1 img,
-.huddle__main_footer_contacts .flex-group-2 img,
-.huddle__main_footer_contacts .flex-group-3 img {
+.huddle__main_footer_info_contacts .flex-group-1 img,
+.huddle__main_footer_info_contacts .flex-group-2 img,
+.huddle__main_footer_info_contacts .flex-group-3 img {
   flex-shrink: 0;
   width: 28px;
   height: 30px;
   margin-right: 2rem;
   align-self: flex-start;
 }
-.huddle__main_footer_contacts .flex-group-1 img {
+.huddle__main_footer_info_contacts .flex-group-1 img {
   margin-top: 8px;
   width: 25px;
 }
-.huddle__main_footer ul {
+.huddle__main_footer_info ul {
   display: grid;
   gap: 1rem;
   margin-top: 3rem;
 }
-.huddle__main_footer .social-media {
+.huddle__main_footer_info .social-media {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
 }
-.huddle__main_footer .social-media a {
+.huddle__main_footer_info .social-media a {
   text-decoration: none;
 }
-.huddle__main_footer .social-media a i {
+.huddle__main_footer_info .social-media a i {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -333,5 +336,28 @@ body {
     width: 100%;
     justify-self: center;
     max-width: 900px;
+  }
+  .huddle__main_footer_info {
+    display: flex;
+    gap: 5rem;
+    max-width: 1200px;
+  }
+  .huddle__main_footer_info > * {
+    flex: 1;
+  }
+  .huddle__main_footer_info ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: flex-start;
+    margin-top: 4rem;
+    row-gap: 1rem;
+  }
+  .huddle__main_footer_info .social-media {
+    align-items: flex-start;
+    margin-top: 4rem;
+  }
+  .huddle__main_footer .copy-right {
+    display: grid;
+    justify-content: flex-end;
   }
 }/*# sourceMappingURL=style.css.map */

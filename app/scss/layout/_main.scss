@@ -7,6 +7,7 @@
   }
 
   .btn-getstarted {
+    cursor: pointer;
     background-color: var(--clr--pink);
     color: var(--clr--white);
     padding: 0.8rem;
@@ -14,6 +15,9 @@
     border-radius: 2rem;
     margin-inline: 1.5rem;
     font-weight: var(--fw--primary-very-bold);
+    &:hover {
+      opacity: 0.6;
+    }
   }
 
   &_header,
@@ -48,8 +52,8 @@
         height: 20px;
       }
       button {
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 38px,
-          var(--clr--very-pale-cyan) 0px 15px 12px;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         font-weight: var(--fw--primary-very-bold);
         border: none;
         padding: 0.3rem;
@@ -184,7 +188,7 @@
         no-repeat;
       background-position: center;
       background-size: contain;
-      padding: 3.5rem 0;
+      padding: 3.5rem 2rem;
 
       &_nav {
         width: 100%;
@@ -195,7 +199,7 @@
         button {
           font-size: 1rem;
           width: 200px;
-          padding: 0.5rem;
+          padding: 0.7em 0rem;
         }
       }
       &_body {
@@ -207,6 +211,7 @@
           flex: 0 1 550px;
           text-align: left;
           padding-inline: 2rem;
+          padding-left: 0;
           margin-top: 2.5rem;
           h1 {
             font-size: 2.5rem;

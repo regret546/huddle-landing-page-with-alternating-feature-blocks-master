@@ -111,6 +111,7 @@ body {
   font-family: var(--ff--heading);
 }
 .huddle__main .btn-getstarted {
+  cursor: pointer;
   background-color: var(--clr--pink);
   color: var(--clr--white);
   padding: 0.8rem;
@@ -118,6 +119,9 @@ body {
   border-radius: 2rem;
   margin-inline: 1.5rem;
   font-weight: var(--fw--primary-very-bold);
+}
+.huddle__main .btn-getstarted:hover {
+  opacity: 0.6;
 }
 .huddle__main_header, .huddle__main_body, .huddle__main_footer {
   display: grid;
@@ -145,7 +149,8 @@ body {
   height: 20px;
 }
 .huddle__main_header_nav button {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 38px, var(--clr--very-pale-cyan) 0px 15px 12px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   font-weight: var(--fw--primary-very-bold);
   border: none;
   padding: 0.3rem;
@@ -268,7 +273,7 @@ body {
     background: var(--clr--very-pale-cyan) url("/images/bg-hero-desktop.svg") no-repeat;
     background-position: center;
     background-size: contain;
-    padding: 3.5rem 0;
+    padding: 3.5rem 2rem;
   }
   .huddle__main_header_nav {
     width: 100%;
@@ -280,7 +285,7 @@ body {
   .huddle__main_header_nav button {
     font-size: 1rem;
     width: 200px;
-    padding: 0.5rem;
+    padding: 0.7em 0rem;
   }
   .huddle__main_header_body {
     display: flex;
@@ -291,6 +296,7 @@ body {
     flex: 0 1 550px;
     text-align: left;
     padding-inline: 2rem;
+    padding-left: 0;
     margin-top: 2.5rem;
   }
   .huddle__main_header_body_info h1 {
